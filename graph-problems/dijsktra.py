@@ -4,10 +4,15 @@ import pprint
 
 
 def dijkstra_graph():
-    '''
+    """
+    You've just arrived at a restaurant after a long day of work wanting to get inside.
+    Unfortunately, they had just closed their doors before you could even enter.
+
+    You realized that all of the other stores around you are probably closing at the same time too.
+
     Given a city full of restaurants, we would like to know which one is the closest from any starting point.
     Accounting for any traffic along the way, such as long traffic lights, pedestrians, or one-way streets.
-    '''
+    """
 
     g = nx.Graph()
 
