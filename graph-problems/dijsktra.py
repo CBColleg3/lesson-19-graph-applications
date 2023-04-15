@@ -1,6 +1,7 @@
 import networkx as nx
 import matplotlib.pyplot as plt
 import pprint
+import json
 
 
 def dijkstra_graph():
@@ -49,7 +50,8 @@ def dijkstra_graph():
     plt.show()
 
     dist = nx.floyd_warshall(g)
-    pprint.pprint(dist)
+
+    pprint.pprint(json.loads(json.dumps(dist)))
 
 
 if __name__ == "__main__":
