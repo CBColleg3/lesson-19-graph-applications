@@ -25,9 +25,16 @@ import pprint
 import json
 ```
 
-# Problem #3: Get to the Closest Restaurant.
+# Problem #1: Get to the Closest Restaurant.
 
 **Informal Description**: 
+You've just arrived at a restaurant after a long day of work wanting to get inside.
+Unfortunately, they had just closed their doors before you could even enter.
+
+You realized that all of the other stores around you are probably closing at the same time too.
+
+Given a city full of restaurants, we would like to know which one is the closest from any starting point.
+Accounting for any traffic along the way, such as long traffic lights, pedestrians, or one-way streets.
 
 > **Formal Description**:
 >  * Input: Weighted Graph G representing 
@@ -37,7 +44,7 @@ import json
 >  * Output: An adjacency matrix representing the shortest 
 >  paths between all nodes.
 
-**Graph Problem/Algorithm**: Floyd–Warshall algorithm
+**Graph Problem/Algorithm**: Floyd–Warshall algorithm/Dijkstra’s Algorithm
 
 
 **Setup code**:
@@ -508,3 +515,41 @@ def dijkstra_graph():
 
 **Interpretation of Results**:
 
+
+
+# Problem #2: Lowest Delivery Cost
+
+**Informal Description**: 
+There is a wedding party that wants to have food from all 20 restaurants. But, the wedding is
+in four hours and they do not have enough money to pick up all the food. The wedding part is hiring 
+a food delivery service to go to every restaurant and pick up the food. The cost changes depending
+on what order the delivery driver goes too. The wedding party is trying to find the minimal cost
+to collect the food from all the restaurants. Below is the restaurant path that will give the minimal cost.
+
+> **Formal Description**:
+>  * Input:
+>  * Output:
+
+**Graph Problem/Algorithm**: MST
+
+
+**Setup code**:
+
+```python
+```
+
+**Visualization**:
+
+![Image goes here](Relative image filename goes here)
+
+**Solution code:**
+
+```python
+```
+
+**Output**
+
+```
+```
+
+**Interpretation of Results**:
