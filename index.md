@@ -528,7 +528,7 @@ to collect the food from all the restaurants. Below is the restaurant path that 
 
 > **Formal Description**:
 A Prims algorithm minimum spanning tree will be used to find the lowest cost for the delivery driver to
-go to the 20 restuarant and pick up the food. The algorithm will find the lowest cost between each 
+go to the 20 restuarant and pick up the food. The algorithm will between each 
 restaurant and take that path.
 >  * Input: A connected undirected graph G = (V, E) of resturants with edge weights that 
 represent the cost of distance traveled.
@@ -621,12 +621,13 @@ print(edgelist)
 Number of nodes =  20
 Number of edges =  30
 [('Indian Sizzler', 'Oishii Sushi & Ramen'), ('Oishii Sushi & Ramen', "Mama's Pizza & Pasta"), 
-("Mama's Pizza & Pasta", 'Santa Fe'), 
-('Santa Fe', 'May Flower'), ('May Flower', 'El Diablo'), ('Oishii Sushi & Ramen', 'Deer Park Tavern'), 
-('El Diablo', 'Home Grown'), ('Home Grown', 'm2o Burgers'), ('m2o Burgers', "Klondike Kate's"), 
-("Mama's Pizza & Pasta", 'Caffe Gelato'), ("Klondike Kate's", 'Snap Custom Pizza'), 
-('Snap Custom Pizza', 'Playa Bowls'), ('Playa Bowls', '2SPizza'), ('2SPizza', 'Five Guys'), 
-('Five Guys', 'Taverna Newark'), ('El Diablo', 'QDOBA'), ('El Diablo', 'Honey Grow'), ('Honey Grow', 'Roots'), 
+("Mama's Pizza & Pasta", 'Santa Fe'), ('Santa Fe', 'May Flower'), 
+('May Flower', 'El Diablo'), ('Oishii Sushi & Ramen', 'Deer Park Tavern'), 
+('El Diablo', 'Home Grown'), ('Home Grown', 'm2o Burgers'), 
+('m2o Burgers', "Klondike Kate's"), ("Mama's Pizza & Pasta", 'Caffe Gelato'), 
+("Klondike Kate's", 'Snap Custom Pizza'), ('Snap Custom Pizza', 'Playa Bowls'), 
+('Playa Bowls', '2SPizza'), ('2SPizza', 'Five Guys'), ('Five Guys', 'Taverna Newark'), 
+('El Diablo', 'QDOBA'), ('El Diablo', 'Honey Grow'), ('Honey Grow', 'Roots'), 
 ('Roots', "Hamilton's")]
 ```
 
