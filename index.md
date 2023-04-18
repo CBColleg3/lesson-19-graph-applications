@@ -1,12 +1,12 @@
-# Title of Your Project
+# Resturants in Newark
 
-**CISC320 Spring 2023 Lesson 14 - Graph Applications**
+**CISC320 Spring 2023 Lesson 19 - Graph Applications**
 
 Group Members:
+* Heni Patel (heni@udel.edu)
 * Christopher Bennett (cbcolleg@udel.edu)
-* Second member (email)
-* Third member (email)
-* Fourth member (email)
+* Ella Wilkins (ellawlk@udel.edu)
+* Sneha Nangelimalil (snehnang@udel.edu)
 
 Description of project
 
