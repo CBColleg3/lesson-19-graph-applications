@@ -541,6 +541,12 @@ all the food from each restaurant.
 **Setup code**:
 
 ```
+import networkx as nx
+import matplotlib.pyplot as plt
+from networkx.algorithms import tree
+import pprint
+import json
+
 #Create empty undirected graph
 G = nx.Graph()
 
@@ -614,7 +620,14 @@ print(edgelist)
 ```
 Number of nodes =  20
 Number of edges =  30
-[('Indian Sizzler', 'Oishii Sushi & Ramen'), ('Oishii Sushi & Ramen', "Mama's Pizza & Pasta"), ("Mama's Pizza & Pasta", 'Santa Fe'), ('Santa Fe', 'May Flower'), ('May Flower', 'El Diablo'), ('Oishii Sushi & Ramen', 'Deer Park Tavern'), ('El Diablo', 'Home Grown'), ('Home Grown', 'm2o Burgers'), ('m2o Burgers', "Klondike Kate's"), ("Mama's Pizza & Pasta", 'Caffe Gelato'), ("Klondike Kate's", 'Snap Custom Pizza'), ('Snap Custom Pizza', 'Playa Bowls'), ('Playa Bowls', '2SPizza'), ('2SPizza', 'Five Guys'), ('Five Guys', 'Taverna Newark'), ('El Diablo', 'QDOBA'), ('El Diablo', 'Honey Grow'), ('Honey Grow', 'Roots'), ('Roots', "Hamilton's")]
+[('Indian Sizzler', 'Oishii Sushi & Ramen'), ('Oishii Sushi & Ramen', "Mama's Pizza & Pasta"), 
+("Mama's Pizza & Pasta", 'Santa Fe'), 
+('Santa Fe', 'May Flower'), ('May Flower', 'El Diablo'), ('Oishii Sushi & Ramen', 'Deer Park Tavern'), 
+('El Diablo', 'Home Grown'), ('Home Grown', 'm2o Burgers'), ('m2o Burgers', "Klondike Kate's"), 
+("Mama's Pizza & Pasta", 'Caffe Gelato'), ("Klondike Kate's", 'Snap Custom Pizza'), 
+('Snap Custom Pizza', 'Playa Bowls'), ('Playa Bowls', '2SPizza'), ('2SPizza', 'Five Guys'), 
+('Five Guys', 'Taverna Newark'), ('El Diablo', 'QDOBA'), ('El Diablo', 'Honey Grow'), ('Honey Grow', 'Roots'), 
+('Roots', "Hamilton's")]
 ```
 
 **Interpretation of Results**:
