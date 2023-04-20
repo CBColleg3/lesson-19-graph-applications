@@ -51,7 +51,12 @@ def dijkstra_graph():
 
     dist = nx.floyd_warshall(g)
 
-    pprint.pprint(json.loads(json.dumps(dist)))
+    for key in dist:
+        print(json.loads(json.dumps(dist[key])), end='')
+        print("")
+
+    #print(json.loads(json.dumps(dist)), end = '')
+   # pprint.pprint(json.loads(json.dumps(dist)))
 
 
 if __name__ == "__main__":
