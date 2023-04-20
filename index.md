@@ -604,7 +604,7 @@ plt.show()
 
 **Visualization**:
 
-![Image goes here](Relative image filename goes here)
+![Prims Graph of resturants with 20 nodes](prims_graph1.png)
 
 **Solution code:**
 
