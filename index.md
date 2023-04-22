@@ -253,5 +253,5 @@ Number of edges =  30
 ```
 
 **Interpretation of Results**:
-The result of this function shows the minimal path to visit all the locations with the 
-least cost. 
+The result of this function shows the minimal path to visit all the locations (resturants) 
+with the least cost. 
