@@ -21,6 +21,7 @@ $> pip install networkx
 ```python
 import networkx as nx
 import matplotlib.pyplot as plt
+from networkx.algorithms import tree
 import pprint
 import json
 ```
@@ -167,12 +168,6 @@ all the food from each restaurant.
 **Setup code**:
 
 ```
-import networkx as nx
-import matplotlib.pyplot as plt
-from networkx.algorithms import tree
-import pprint
-import json
-
 #Create empty undirected graph
 G = nx.Graph()
 
@@ -258,3 +253,5 @@ Number of edges =  30
 ```
 
 **Interpretation of Results**:
+The result of this function shows the minimal path to visit all the locations with the 
+least cost. 
