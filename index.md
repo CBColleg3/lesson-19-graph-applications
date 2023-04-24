@@ -239,8 +239,8 @@ plt.show()
 
 **Output**
 
-```
 ![MST Graph of Lowest Cost Path](prims_mst.png)
+```
 Number of nodes =  20
 Number of edges =  30
 [('Indian Sizzler', 'Oishii Sushi & Ramen'), ('Oishii Sushi & Ramen', "Mama's Pizza & Pasta"), 
