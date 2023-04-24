@@ -217,10 +217,6 @@ nx.draw_networkx_edge_labels(G, pos, edge_labels)
 
 ax = plt.gca()
 ax.margins(0.02)
-
-plt.axis("off")
-plt.tight_layout()
-plt.show()
 ```
 
 **Visualization**:
@@ -231,14 +227,20 @@ plt.show()
 
 ```
 mst = tree.minimum_spanning_edges(G, algorithm="prim", data=False)
+m = tree.minimum_spanning_tree(G)
 edgelist = list(mst)
 sorted(sorted(e) for e in edgelist)
+nx.draw_networkx_edges(m, pos, edge_color="purple", width=3)
 print(edgelist)
+plt.axis("off")
+plt.tight_layout()
+plt.show()
 ```
 
 **Output**
 
 ```
+![MST Graph of Lowest Cost Path](prims_mst.png)
 Number of nodes =  20
 Number of edges =  30
 [('Indian Sizzler', 'Oishii Sushi & Ramen'), ('Oishii Sushi & Ramen', "Mama's Pizza & Pasta"), 
@@ -253,5 +255,5 @@ Number of edges =  30
 ```
 
 **Interpretation of Results**:
-The result of this function shows the minimal path to visit all the locations (resturants) 
+The result of this function shows the minimal path (purple) to visit all the locations (resturants) 
 with the least cost. 
