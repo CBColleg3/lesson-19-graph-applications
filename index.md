@@ -257,3 +257,110 @@ Number of edges =  30
 **Interpretation of Results**:
 The result of this function shows the minimal path (purple) to visit all the locations (resturants) 
 with the least cost. 
+
+
+# Problem #4: Water Refills
+
+**Informal Description**: 
+You are a waiter a restaurant who is in charge of keeping the guests' water glasses full. All the guests are already seated and are labeled by the person who made their reservation. You know the layout of the restaurant resembles a graph where the nodes represent the tables and the edges represent the distances between the two tables. Traverse the tables to find the path to get to all the tables.
+
+> **Formal Description**:
+A Breadth-First Search will be used to traverse all the nodes in the graph and come up with a path to visit each table.
+>  * Input:
+A connected undirected graph G = (V, E) of tables with undirected edges representing the distances between tables.
+>  * Output:
+A list of visited vertices representing the order in which the tables in the restaurant should be visited.
+
+**Graph Problem/Algorithm**: BFS
+
+**Setup code**:
+
+```
+# Create empty undirected graph
+G = nx.Graph()
+
+# Add edges
+G.add_edge("Logan", "Clara")
+G.add_edge("Clara", "Sandra")
+G.add_edge("Sandra", "George")
+G.add_edge("George", "Peter")
+G.add_edge("Peter", "Franklin")
+G.add_edge("Franklin", "Sandra")
+G.add_edge("Sandra", "Peter")
+G.add_edge("George", "Franklin")
+G.add_edge("Sandra", "Aaron")
+G.add_edge("Aaron", "Nyla")
+G.add_edge("Nyla", "John")
+G.add_edge("John", "Aaron")
+G.add_edge("Hannah", "Clara")
+G.add_edge("Ursula", "Clara")
+G.add_edge("Hannah", "Ursula")
+G.add_edge("Riley", "Ursula")
+G.add_edge("Benjamin", "Hannah")
+G.add_edge("Riley", "Benjamin")
+G.add_edge("Benjamin", "Daniel")
+G.add_edge("Mason", "Ophelia")
+G.add_edge("Ophelia", "Daniel")
+G.add_edge("Daniel", "Tina")
+G.add_edge("Ophelia", "Isaac")
+G.add_edge("Elizabeth", "Isaac")
+G.add_edge("Isaac", "Quentin")
+G.add_edge("Quentin", "Kamala")
+
+# To visualize
+nx.draw(G, with_labels = True)
+plt.savefig("tables_graph.png")
+plt.show()
+```
+
+**Visualization**:
+
+![BFS Graph of restaurant with 21 nodes (tables)](tables_graph.png)
+
+**Solution code:**
+
+```
+print("Number of nodes = ", G.number_of_nodes())
+print("Number of edges = ", G.number_of_edges())
+
+edges = nx.bfs_edges(G, "Aaron")
+nodes = ["Aaron"] + [v for u, v in edges]
+print("\nBFS Order:")
+for i in nodes:
+    print(i)
+```
+
+**Output**
+
+```
+Number of nodes =  21
+Number of edges =  26
+
+BFS Order:
+Aaron
+Sandra
+Nyla
+John
+Clara
+George
+Franklin
+Peter
+Logan
+Hannah
+Ursula
+Benjamin
+Riley
+Daniel
+Ophelia
+Tina
+Mason
+Isaac
+Elizabeth
+Quentin
+Kamala
+```
+
+**Interpretation of Results**:
+```
+The order of the nodes printed tells the waiter in which order to visit the tables in the restaurant to refill water glasses.
+```
