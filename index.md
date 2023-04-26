@@ -255,8 +255,7 @@ Number of edges =  30
 ```
 
 **Interpretation of Results**:
-The result of this function shows the minimal path (purple) to visit all the locations (resturants) 
-with the least cost. 
+The result of this function shows the minimal path (purple) to visit all the locations (resturants) with the least cost. 
 
 
 # Problem #4: Water Refills
